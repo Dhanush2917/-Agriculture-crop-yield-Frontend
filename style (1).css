@@ -1,0 +1,143 @@
+/* Reset some basic elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Body and background */
+body {
+  background-color: lavender;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Center content wrapper */
+.center {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Headings */
+h1 {
+  color: #2e7d32; /* dark green */
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #6d4c41; /* brownish */
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Paragraph */
+p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Horizontal rules */
+hr {
+  margin: 30px 0;
+  border: 1px solid #ccc;
+}
+
+/* Links styling */
+a {
+  color: #1e88e5;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Table style for form */
+form table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+}
+
+form table td {
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 600;
+  vertical-align: middle;
+  color: #4a4a4a;
+}
+
+form table input[type="text"],
+form table input[type="number"],
+form table select {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+form table input[type="text"]:focus,
+form table input[type="number"]:focus,
+form table select:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #276424;
+}
+
+/* Responsive iframe and images */
+iframe,
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Footer link container */
+.footer-links {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.footer-links a {
+  font-weight: 500;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  form table {
+    width: 100%;
+  }
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register for Agriculture Crop Yield</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="center">
+    <h1 style="color: darkgreen;">Agriculture Crop Yield 👨‍🌾</h1>
+    <h2 style="color: brown;">Estimate Yield (tons per hectare)</h2>
+
+    <form id="agriForm" novalidate>
+      <table>
+        <tr>
+          <td><label for="region">Region</label></td>
+          <td>
+            <select id="region" required>
+              <option value="" disabled selected>Select</option>
+              <option>North</option>
+              <option>East</option>
+              <option>South</option>
+              <option>West</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="soil_type">Soil Type</label></td>
+          <td>
+            <select id="soil_type" required>
+              <option value="" disabled selected>Select</option>
+              <option>Clay</option>
+              <option>Sandy</option>
+              <option>Loam</option>
+              <option>Silt</option>
+              <option>Peaty</option>
+              <option>Chalky</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="crop">Crop</label></td>
+          <td>
+            <select id="crop" required>
+              <option value="" disabled selected>Select</option>
+              <option>Wheat</option>
+              <option>Rice</option>
+              <option>Maize</option>
+              <option>Barley</option>
+              <option>Soybean</option>
+              <option>Cotton</option>
+            </select>
+          </td>
+        </tr>
+        <tr><td><label for="rainfall">Rainfall (mm)</label></td><td><input type="number" id="rainfall" required></td></tr>
+        <tr><td><label for="temperature">Temperature (°C)</label></td><td><input type="number" id="temperature" required></td></tr>
+        <tr>
+          <td><label for="fertilizer">Fertilizer Used</label></td>
+          <td>
+            <select id="fertilizer" required>
+              <option value="" disabled selected>Select</option>
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="irrigation">Irrigation Used</label></td>
+          <td>
+            <select id="irrigation" required>
+              <option value="" disabled selected>Select</option>
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="weather">Weather Condition</label></td>
+          <td>
+            <select id="weather" required>
+              <option value="" disabled selected>Select</option>
+              <option>Sunny</option>
+              <option>Rainy</option>
+              <option>Cloudy</option>
+            </select>
+          </td>
+        </tr>
+        <tr><td><label for="days_to_harvest">Days to Harvest</label></td><td><input type="number" id="days_to_harvest" required></td></tr>
+        <tr><td><input type="reset" value="Reset" /></td><td><input type="submit" value="Estimate Yield" /></td></tr>
+      </table>
+    </form>
+
+    <div id="resultBox" style="margin-top: 30px; font-size: 1.2rem; color: darkgreen; font-weight: bold;"></div>
+    <hr />
+    <p><a href="index.html">🏡 Home</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
